@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<translate>
+		<modules>
+			<Custom_Swedbanklink>
+				<files>
+					<default>Custom_Swedbanklink.csv</default>
+				</files>
+			</Custom_Swedbanklink>
+		</modules>
+	</translate>
+	<acl>
+		<resources>
+			<all>
+	            <title>Allow Everything</title>
+	        </all>
+	        <admin>
+	            <children>	 
+	                <system>
+	                    <children>
+	                        <config>        
+	                            <children>
+	                                <swedbanklink translate="title">
+	                                    <title>Swedbanklink</title>
+	                                </swedbanklink>
+	                            </children>
+	                        </config>
+	                    </children>
+	                </system>
+	            </children>
+	        </admin>
+		</resources>
+	</acl>
+</config>

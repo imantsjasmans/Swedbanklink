@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title><?php echo $this->__('Processing, please wait!'); ?></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<h1><?php echo $this->__('Processing, please wait!'); ?><h1> 
+		<?php echo $this->getForm()->toHtml() ?>
+		<script type="text/javascript">
+		//<![CDATA[
+		var form = document.getElementById('swedbanklink_form');
+		window.onload = form.submit();
+		//]]>
+		</script>
+	</body>
+</html>
