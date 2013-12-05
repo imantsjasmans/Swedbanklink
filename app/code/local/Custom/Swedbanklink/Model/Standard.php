@@ -70,6 +70,8 @@ class Custom_Swedbanklink_Model_Standard extends Mage_Payment_Model_Method_Abstr
 
   public function getRedirectionFormData() 
   {
+    mb_internal_encoding("utf-8");
+    
     // Set variables
     $VK_SERVICE   = '1002';
     $VK_VERSION   = '008';
@@ -116,6 +118,8 @@ class Custom_Swedbanklink_Model_Standard extends Mage_Payment_Model_Method_Abstr
 
   public function processRequest($request) 
   {
+    mb_internal_encoding("utf-8");
+    
     $VK_SERVICE   = $request->getParam('VK_SERVICE');
     $VK_VERSION   = $request->getParam('VK_VERSION');
     $VK_SND_ID    = $request->getParam('VK_SND_ID');
